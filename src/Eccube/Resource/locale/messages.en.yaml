@@ -148,6 +148,7 @@ front.block.calendar.thursday: 'Th'
 front.block.calendar.friday: 'Fr'
 front.block.calendar.saturday: 'Sa'
 front.block.calendar.holiday_notice: '* The red characters are closed.'
+front.block.calendar.days: '(+%days%days)'
 
 
 #------------------------------------------------------------------------------------

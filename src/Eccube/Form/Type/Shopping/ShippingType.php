@@ -173,8 +173,8 @@ class ShippingType extends AbstractType
                         'E'
                     );
 
-                    foreach ($period as $day) {
-                        $deliveryDurations[$day->format('Y/m/d')] = $day->format('Y/m/d').'('.$dateFormatter->format($day).')';
+                    foreach ($period as $key => $day) {
+                        $deliveryDurations[$day->format('Y/m/d')] = $day->format('Y/m/d') . '(' . $dateFormatter->format($day) . ')' . ' ' . trans('front.block.calendar.days', ['%days%' => $minDate + $key]);
                     }
                 }
 
